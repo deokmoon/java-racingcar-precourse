@@ -2,7 +2,7 @@ package racingcar.domain;
 
 import racingcar.exception.CarNameLengthException;
 
-import static racingcar.domain.OptionConstants.CAR_NAME_MAX_LENGTH;
+import static racingcar.utils.OptionConstants.CAR_NAME_MAX_LENGTH;
 
 public class CarName {
     private String carName;
