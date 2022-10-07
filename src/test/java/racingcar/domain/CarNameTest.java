@@ -4,7 +4,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CarNameTest {
@@ -25,6 +24,6 @@ public class CarNameTest {
         // when
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> new CarName(carName));
         // then
-        assertEquals(exception.getMessage(), "자동차의 이름은 5글자 이하로 입력해야 합니다.");
+        assertThat(exception.getMessage()).isEqualTo("자동차의 이름은 5글자 이하로 입력해야 합니다.");
     }
 }
