@@ -6,7 +6,7 @@ import static racingcar.utils.OptionConstants.CAR_NAME_MAX_LENGTH;
 import static racingcar.utils.OptionConstants.MSG_CAR_NAME_LENGTH_EXCEPTION;
 
 public class CarName {
-    private String carName;
+    private final String carName;
 
     public CarName(String carName) {
         validateCarNameLength(carName);
