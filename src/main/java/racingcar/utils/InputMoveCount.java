@@ -1,10 +1,14 @@
 package racingcar.utils;
 
-import racingcar.exception.InputMoveCountExceedException;
+import racingcar.exception.InputMoveCountIlegalArgumentException;
 
 import java.util.Scanner;
 
 import static racingcar.utils.OptionConstants.MAX_INPUT_MOVE_COUNT;
+import static racingcar.utils.OptionConstants.MIN_INPUT_MOVE_COUNT;
+import static racingcar.utils.OptionConstants.MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION;
+import static racingcar.utils.OptionConstants.MSG_MOVE_MIN_VALUE_EXCEPTION;
+import static racingcar.utils.OptionConstants.MSG_NUMBER_FORMAT_EXCEPTION;
 
 public class InputMoveCount {
     public static int inputMoveCount() {
@@ -15,8 +19,9 @@ public class InputMoveCount {
 
             validateExceedInputNumMaxLength(moveCountStr);
             moveCount = Integer.parseInt(moveCountStr);
+            validateMinInputNum(moveCount);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("숫자만 입력할 수 있습니다.");
+            throw new NumberFormatException(MSG_NUMBER_FORMAT_EXCEPTION);
         }
 
         return moveCount;
@@ -24,7 +29,13 @@ public class InputMoveCount {
 
     private static void validateExceedInputNumMaxLength(String moveCountStr) {
         if (moveCountStr.length() > MAX_INPUT_MOVE_COUNT) {
-            throw new InputMoveCountExceedException();
+            throw new InputMoveCountIlegalArgumentException(MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION);
+        }
+    }
+
+    private static void validateMinInputNum(int inputMoveCount) {
+        if (inputMoveCount <MIN_INPUT_MOVE_COUNT) {
+            throw new InputMoveCountIlegalArgumentException(MSG_MOVE_MIN_VALUE_EXCEPTION);
         }
     }
 }

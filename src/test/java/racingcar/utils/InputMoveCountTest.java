@@ -9,6 +9,8 @@ import java.nio.charset.StandardCharsets;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static racingcar.utils.OptionConstants.MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION;
+import static racingcar.utils.OptionConstants.MSG_MOVE_MIN_VALUE_EXCEPTION;
 
 public class InputMoveCountTest {
     @DisplayName("입력받은 시도할 횟수에 대한 정상 입력 확인")
@@ -37,7 +39,21 @@ public class InputMoveCountTest {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> InputMoveCount.inputMoveCount());
 
         // then
-        assertThat(exception.getMessage()).isEqualTo("입력할 수 있는 숫자는 최대 4자리입니다.");
+        assertThat(exception.getMessage()).isEqualTo(MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION);
+    }
+
+    @DisplayName("입력받은 시도할 횟수에 대한 값 테스트(최소 1)")
+    @Test
+    public void 입력받은_숫자_1이상_아님_예외발생() {
+        //given
+        String inputCli = "0";
+
+        //when
+        System.setIn(new ByteArrayInputStream(inputCli.getBytes(StandardCharsets.UTF_8)));
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> InputMoveCount.inputMoveCount());
+
+        // then
+        assertThat(exception.getMessage()).isEqualTo(MSG_MOVE_MIN_VALUE_EXCEPTION);
     }
 
     @DisplayName("숫자가 아닌 다른 문자를 입력 했을 때 예외처리 테스트")
