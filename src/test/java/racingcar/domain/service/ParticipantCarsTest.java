@@ -60,7 +60,7 @@ public class ParticipantCarsTest {
         participantCars.moveParticipantCarsByInputCount(1);
 
         //then
-        assertThat(output()).contains("tico: ", "venue: -");
+        assertThat(output()).contains("tico : ", "venue : -");
     }
 
     @DisplayName("단독 우승자 출력 테스트")
@@ -78,7 +78,7 @@ public class ParticipantCarsTest {
         participantCars.printWinner();
 
         //then
-        assertThat(output()).contains("우승자: venue");
+        assertThat(output()).contains("최종 우승자 : venue");
     }
 
     @DisplayName("공동 우승자 출력 테스트")
@@ -97,6 +97,6 @@ public class ParticipantCarsTest {
         participantCars.printWinner();
 
         //then
-        assertThat(output()).contains("우승자: venue, tobi");
+        assertThat(output()).contains("최종 우승자 : venue, tobi");
     }
 }

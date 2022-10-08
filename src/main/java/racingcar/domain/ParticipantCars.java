@@ -30,7 +30,7 @@ public class ParticipantCars {
     }
 
     private void printCar(Car car) {
-        System.out.printf("%s: %s%n", car.getCarName(), car.getDistancePrintMessage());
+        System.out.printf("%s : %s%n", car.getCarName(), car.getDistancePrintMessage());
     }
 
     public void printWinner() {
