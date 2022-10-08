@@ -1,8 +1,7 @@
 package racingcar.utils;
 
+import camp.nextstep.edu.missionutils.Console;
 import racingcar.exception.InputMoveCountIllegalArgumentException;
-
-import java.util.Scanner;
 
 import static racingcar.utils.RacingCarConstants.MAX_INPUT_MOVE_COUNT;
 import static racingcar.utils.RacingCarConstants.MIN_INPUT_MOVE_COUNT;
@@ -12,11 +11,10 @@ import static racingcar.utils.RacingCarConstants.MSG_NUMBER_FORMAT_EXCEPTION;
 
 public class InputMoveCount {
     public static int inputMoveCount() {
-        Scanner sc = new Scanner(System.in);
+        System.out.println("시도할 횟수를 입력하세요.");
+        String moveCountStr = Console.readLine();
         int moveCount;
         try {
-            String moveCountStr = sc.next();
-
             validateExceedInputNumMaxLength(moveCountStr);
             moveCount = Integer.parseInt(moveCountStr);
             validateMinInputNum(moveCount);
