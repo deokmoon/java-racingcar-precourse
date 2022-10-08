@@ -18,6 +18,7 @@ public class RacingCarConstants {
     public static final String DISTANCE_PRINT_CHARACTER = "-";
 
     // Exception
+    public static final String COMMON_ERROR_MESSAGE = "[ERROR]";
     public static final String MSG_NUMBER_FORMAT_EXCEPTION = "숫자만 입력할 수 있습니다.";
     public static final String MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION = "입력할 수 있는 숫자는 최대 4자리입니다.";
     public static final String MSG_MOVE_MIN_VALUE_EXCEPTION = "시도할 횟수는 최소 1이상입니다.";
