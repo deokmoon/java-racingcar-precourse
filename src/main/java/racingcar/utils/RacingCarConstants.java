@@ -15,6 +15,7 @@ public class RacingCarConstants {
 
     // Move Strategy
     public static final int MIN_POWER = 4; // 전진 or 정지 정하는 기준
+    public static final String DISTANCE_PRINT_CHARACTER = "-";
 
     // Exception
     public static final String MSG_NUMBER_FORMAT_EXCEPTION = "숫자만 입력할 수 있습니다.";
