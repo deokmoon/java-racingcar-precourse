@@ -42,7 +42,7 @@ public class ParticipantCars {
             sb.append(separator);
         }
         sb.delete(sb.length() - separator.length(), sb.length());
-        System.out.println("우승자: " + sb);
+        System.out.println("최종 우승자 : " + sb);
     }
 
     private int getWinnerCount() {
