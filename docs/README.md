@@ -49,9 +49,18 @@
 <pre>
 # CarName: 자동차 이름 원시값 저장
     1-2 각 자동차의 이름은 5자 이하 확인
-# InputCarNames: 입력받은 자동차 이름을 저장 및 검증
+# InputCarNames: 입력받은 자동차 이름 저장 및 검증
     1-1 각 자동차의 이름은 쉼표( , )를 기준으로 구분
     1-3 입력받은 이름 중복 여부 확인
     1-4 입력받은 이름은 둘 이상이어야 함
-
+# InputMoveCount: 입력받은 '시도할 횟수' 저장 및 검증
+    2-1 시도할 횟수는 1이상이어야 함
+    2-2 입력한 횟수 문자열의 Length는 최대 4로 제한
+    2-3 입력한 횟수 문자열이 숫자인지 확인
+# RandomNumGenerator: min, max를 받아 난수 생성
+    3-1 0~9 사이의 숫자 Random 하게 발생
+# Accelerator, MoveStrategy: isMovable 을 통해 움직일 수 있는지 판단
+# Distance: Accelerator 기준으로 이동 거리 저장하는 원시값 포장 객체 
+    3-2 Random 값 4 이상인 경우 전진
+    3-3 Random 값 3 이하인 경우 멈춤
 </pre>
