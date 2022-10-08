@@ -9,13 +9,12 @@ import racingcar.utils.InputMoveCount;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RacingCarGame implements Game{
-    private int inputMoveCount;
-
+public class RacingCarGame implements Game {
     @Override
     public void run() {
         List<Car> cars = generateCars();
         ParticipantCars participantCars = new ParticipantCars(cars);
+        int inputMoveCount = InputMoveCount.inputMoveCount();
         play(participantCars, inputMoveCount);
     }
 
@@ -30,11 +29,7 @@ public class RacingCarGame implements Game{
     }
 
     private String[] inputCarNames() {
-        inputMoveCount = InputMoveCount.inputMoveCount();
-        String[] carNames = null;
-        for (int i = 0; i < inputMoveCount; i++) {
-            carNames = InputCarNames.inputCarNames();
-        }
+        String[] carNames = InputCarNames.inputCarNames();
         return carNames;
     }
 
