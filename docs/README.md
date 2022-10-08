@@ -80,5 +80,7 @@
 
 # Service 패키지
     - 각 도메인을 호출하여 게임 수행 처리
-
+# Machine 패키지
+    -추후 다른 종류의 RacingCar Game이 생길 수 있을 수 있음
+    - 확장성을 위해 각 GameMachine으로 각 게임을 수행할 수 있도록 설계 
 </pre>
