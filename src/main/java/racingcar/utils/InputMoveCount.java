@@ -1,6 +1,6 @@
 package racingcar.utils;
 
-import racingcar.exception.InputMoveCountIlegalArgumentException;
+import racingcar.exception.InputMoveCountIllegalArgumentException;
 
 import java.util.Scanner;
 
@@ -29,13 +29,13 @@ public class InputMoveCount {
 
     private static void validateExceedInputNumMaxLength(String moveCountStr) {
         if (moveCountStr.length() > MAX_INPUT_MOVE_COUNT) {
-            throw new InputMoveCountIlegalArgumentException(MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION);
+            throw new InputMoveCountIllegalArgumentException(MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION);
         }
     }
 
     private static void validateMinInputNum(int inputMoveCount) {
         if (inputMoveCount <MIN_INPUT_MOVE_COUNT) {
-            throw new InputMoveCountIlegalArgumentException(MSG_MOVE_MIN_VALUE_EXCEPTION);
+            throw new InputMoveCountIllegalArgumentException(MSG_MOVE_MIN_VALUE_EXCEPTION);
         }
     }
 }

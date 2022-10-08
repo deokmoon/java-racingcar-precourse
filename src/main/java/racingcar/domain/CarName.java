@@ -1,8 +1,9 @@
 package racingcar.domain;
 
-import racingcar.exception.CarNameLengthException;
+import racingcar.exception.InputCarNameIllegarArgumentException;
 
 import static racingcar.utils.OptionConstants.CAR_NAME_MAX_LENGTH;
+import static racingcar.utils.OptionConstants.MSG_CAR_NAME_LENGTH_EXCEPTION;
 
 public class CarName {
     private String carName;
@@ -18,7 +19,7 @@ public class CarName {
 
     private void validateCarNameLength(String carName) {
         if (carName.length() > CAR_NAME_MAX_LENGTH) {
-            throw new CarNameLengthException();
+            throw new InputCarNameIllegarArgumentException(MSG_CAR_NAME_LENGTH_EXCEPTION);
         }
     }
 }

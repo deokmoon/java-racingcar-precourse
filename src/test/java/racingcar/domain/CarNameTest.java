@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static racingcar.utils.OptionConstants.MSG_CAR_NAME_LENGTH_EXCEPTION;
 
 public class CarNameTest {
     @DisplayName("자동차이름 원시값 객체 생성을 통해 원시값이 포장되는지 확인")
@@ -24,6 +25,6 @@ public class CarNameTest {
         // when
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> new CarName(carName));
         // then
-        assertThat(exception.getMessage()).isEqualTo("자동차의 이름은 5글자 이하로 입력해야 합니다.");
+        assertThat(exception.getMessage()).isEqualTo(MSG_CAR_NAME_LENGTH_EXCEPTION);
     }
 }

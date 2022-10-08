@@ -12,7 +12,9 @@ public class OptionConstants {
     public static final String MSG_NUMBER_FORMAT_EXCEPTION = "숫자만 입력할 수 있습니다.";
     public static final String MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION = "입력할 수 있는 숫자는 최대 4자리입니다.";
     public static final String MSG_MOVE_MIN_VALUE_EXCEPTION = "시도할 횟수는 최소 1이상입니다.";
-
+    public static final String MSG_CAR_NAME_LENGTH_EXCEPTION = "자동차의 이름은 5글자 이하로 입력해야 합니다.";
+    public static final String MSG_CAR_NAME_DUPLICATE_EXCEPTION = "게임에 참가하는 자동차의 이름은 중복 허용이 안됩니다.";
+    public static final String MSG_GAME_PARTICIPANT_ILLEGAR_EXCEPTION = "게임에 참가하는 자동차는 2대 이상이어야 합니다.";
 
 
 }

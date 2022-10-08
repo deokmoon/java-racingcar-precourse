@@ -8,6 +8,8 @@ import java.nio.charset.StandardCharsets;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static racingcar.utils.OptionConstants.MSG_CAR_NAME_DUPLICATE_EXCEPTION;
+import static racingcar.utils.OptionConstants.MSG_GAME_PARTICIPANT_ILLEGAR_EXCEPTION;
 
 public class InputCarNamesTest {
     @Test
@@ -36,7 +38,7 @@ public class InputCarNamesTest {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> InputCarNames.inputCarNames());
 
         // then
-        assertThat(exception.getMessage()).isEqualTo("게임에 참가하는 자동차의 이름은 중복 허용이 안됩니다.");
+        assertThat(exception.getMessage()).isEqualTo(MSG_CAR_NAME_DUPLICATE_EXCEPTION);
     }
 
     @DisplayName("참가자 인원이 2 미만인 경우 예외처리")
@@ -50,6 +52,6 @@ public class InputCarNamesTest {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> InputCarNames.inputCarNames());
 
         // then
-        assertThat(exception.getMessage()).isEqualTo("게임에 참가하는 자동차는 2대 이상이어야 합니다.");
+        assertThat(exception.getMessage()).isEqualTo(MSG_GAME_PARTICIPANT_ILLEGAR_EXCEPTION);
     }
 }
