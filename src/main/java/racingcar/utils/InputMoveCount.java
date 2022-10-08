@@ -4,11 +4,11 @@ import racingcar.exception.InputMoveCountIllegalArgumentException;
 
 import java.util.Scanner;
 
-import static racingcar.utils.OptionConstants.MAX_INPUT_MOVE_COUNT;
-import static racingcar.utils.OptionConstants.MIN_INPUT_MOVE_COUNT;
-import static racingcar.utils.OptionConstants.MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION;
-import static racingcar.utils.OptionConstants.MSG_MOVE_MIN_VALUE_EXCEPTION;
-import static racingcar.utils.OptionConstants.MSG_NUMBER_FORMAT_EXCEPTION;
+import static racingcar.utils.RacingCarConstants.MAX_INPUT_MOVE_COUNT;
+import static racingcar.utils.RacingCarConstants.MIN_INPUT_MOVE_COUNT;
+import static racingcar.utils.RacingCarConstants.MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION;
+import static racingcar.utils.RacingCarConstants.MSG_MOVE_MIN_VALUE_EXCEPTION;
+import static racingcar.utils.RacingCarConstants.MSG_NUMBER_FORMAT_EXCEPTION;
 
 public class InputMoveCount {
     public static int inputMoveCount() {

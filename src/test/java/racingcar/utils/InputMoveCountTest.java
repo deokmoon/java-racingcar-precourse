@@ -9,8 +9,8 @@ import java.nio.charset.StandardCharsets;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static racingcar.utils.OptionConstants.MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION;
-import static racingcar.utils.OptionConstants.MSG_MOVE_MIN_VALUE_EXCEPTION;
+import static racingcar.utils.RacingCarConstants.MSG_MOVE_COUNT_LENGTH_EXCEED_EXCEPTION;
+import static racingcar.utils.RacingCarConstants.MSG_MOVE_MIN_VALUE_EXCEPTION;
 
 public class InputMoveCountTest {
     @DisplayName("입력받은 시도할 횟수에 대한 정상 입력 확인")

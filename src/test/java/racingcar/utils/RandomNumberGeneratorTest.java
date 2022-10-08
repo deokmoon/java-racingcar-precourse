@@ -4,8 +4,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static racingcar.utils.OptionConstants.MAX_RANDOM_NUM;
-import static racingcar.utils.OptionConstants.MIN_RANDOM_NUM;
+import static racingcar.utils.RacingCarConstants.MAX_RANDOM_NUM;
+import static racingcar.utils.RacingCarConstants.MIN_RANDOM_NUM;
 
 public class RandomNumberGeneratorTest {
     @DisplayName("난수가 0~9 사이로 생성되는지 확인")

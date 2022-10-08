@@ -6,10 +6,10 @@ import racingcar.exception.InputCarNameIllegarArgumentException;
 import java.util.HashSet;
 import java.util.Set;
 
-import static racingcar.utils.OptionConstants.CAR_NAME_SPLIT_CHARACTER;
-import static racingcar.utils.OptionConstants.MIN_PARTICIPANT_CARS;
-import static racingcar.utils.OptionConstants.MSG_CAR_NAME_DUPLICATE_EXCEPTION;
-import static racingcar.utils.OptionConstants.MSG_GAME_PARTICIPANT_ILLEGAR_EXCEPTION;
+import static racingcar.utils.RacingCarConstants.CAR_NAME_SPLIT_CHARACTER;
+import static racingcar.utils.RacingCarConstants.MIN_PARTICIPANT_CARS;
+import static racingcar.utils.RacingCarConstants.MSG_CAR_NAME_DUPLICATE_EXCEPTION;
+import static racingcar.utils.RacingCarConstants.MSG_GAME_PARTICIPANT_ILLEGAR_EXCEPTION;
 
 public class InputCarNames {
     public static String[] inputCarNames() {

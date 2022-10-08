@@ -8,8 +8,8 @@ import java.nio.charset.StandardCharsets;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static racingcar.utils.OptionConstants.MSG_CAR_NAME_DUPLICATE_EXCEPTION;
-import static racingcar.utils.OptionConstants.MSG_GAME_PARTICIPANT_ILLEGAR_EXCEPTION;
+import static racingcar.utils.RacingCarConstants.MSG_CAR_NAME_DUPLICATE_EXCEPTION;
+import static racingcar.utils.RacingCarConstants.MSG_GAME_PARTICIPANT_ILLEGAR_EXCEPTION;
 
 public class InputCarNamesTest {
     @Test

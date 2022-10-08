@@ -1,6 +1,6 @@
 package racingcar.domain;
 
-import static racingcar.utils.OptionConstants.MIN_POWER;
+import static racingcar.utils.RacingCarConstants.MIN_POWER;
 
 public class Accelerator implements MoveStrategy {
     private final int power;
