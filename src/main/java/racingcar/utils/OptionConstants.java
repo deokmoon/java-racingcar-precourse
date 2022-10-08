@@ -8,6 +8,7 @@ public class OptionConstants {
     public static final String CAR_NAME_SPLIT_CHARACTER = ","; // 자동차 이름 구분 문자열
     public static final int MIN_RANDOM_NUM = 0; // 난수 최소 값
     public static final int MAX_RANDOM_NUM = 9; // 난수 최대 값
+    public static final int MIN_POWER = 4; // 전진 or 정지 정하는 기준
 
     // Exception
     public static final String MSG = "입력할 수 있는 숫자는 최대 4자리입니다.";
