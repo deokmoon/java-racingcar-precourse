@@ -13,7 +13,7 @@ public class CarTest {
         Car car = new Car(new CarName("tico"));
 
         // then
-        assertThat(car.getName()).isEqualTo("tico");
+        assertThat(car.getCarName()).isEqualTo("tico");
     }
 
     @Test
