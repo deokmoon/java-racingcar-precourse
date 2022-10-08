@@ -6,6 +6,8 @@ public class OptionConstants {
     public static final int MAX_INPUT_MOVE_COUNT = 4; // 입력받을 수 있는 시도할 횟수에 대한 최대 문자열 길이
     public static final int MIN_INPUT_MOVE_COUNT = 1; // 입력받은 시도할 횟수 최소 값
     public static final String CAR_NAME_SPLIT_CHARACTER = ","; // 자동차 이름 구분 문자열
+    public static final int MIN_RANDOM_NUM = 0; // 난수 최소 값
+    public static final int MAX_RANDOM_NUM = 9; // 난수 최대 값
 
     // Exception
     public static final String MSG = "입력할 수 있는 숫자는 최대 4자리입니다.";
